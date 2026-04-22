@@ -1,18 +1,12 @@
-# Program tabel perkalian dengan validasi nama
+nama_asli = "faiz"
 
-# input nama
-nama_benar = "duyas"  # ganti dengan nama pendek kamu
 nama = input("Masukkan nama anda: ")
-
-if nama == nama_benar:
-    print("Nama benar, lanjut ke program...\n")
-
-    # input angka
-    angka = int(input("Masukkan angka: "))
-
-    print("\nTabel perkalian:")
-    for i in range(1, 11):
-        print(f"{angka} x {i} = {angka * i}")
-
-else:
+while nama.lower() != nama_asli:
     print("Silahkan coba lagi")
+    nama = input("Masukkan nama anda: ")
+
+print("Nama benar, lanjut ke program...\n")
+angka = int(input("Masukkan angka: "))
+
+for i in range(1, 11):
+    print(f"{angka} x {i} = {angka * i}")
